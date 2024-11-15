@@ -1,9 +1,0 @@
-.env
-
-venv/
-dataset_boneage/
-results/
-projenv/
-**.ipynb
-
-pypi_token.txt
