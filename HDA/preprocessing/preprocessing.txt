@@ -1,0 +1,6 @@
+pipeline
+1. crop 5% each side (10% in vertical direction and 10% in horizontal direction)
+2. resize 500x500
+3. CLAHE
+4. 9 overlapped patches of size 224x224
+5. horizontal or vertical flip
