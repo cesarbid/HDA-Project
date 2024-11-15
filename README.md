@@ -6,31 +6,16 @@ The structure of the folder is the following:
 ```plaintext
 HDA/
 ├── __init__.py
-├── __pycache__/
-│   ├── __init__.cpython-38.pyc
-│   ├── cbam.cpython-38.pyc
-│   ├── Inception.cpython-38.pyc
-│   ├── resnet18.cpython-38.pyc
 ├── models/
 │   ├── __init__.py
-│   ├── __pycache__/
-│   │   ├── __init__.cpython-38.pyc
-│   │   ├── cbam.cpython-38.pyc
-│   │   ├── Inception.cpython-38.pyc
-│   │   ├── resnet18.cpython-38.pyc
 │   ├── cbam.py
 │   ├── Inception.py
 │   ├── resnet18.py
 ├── preprocessing/
 │   ├── __init__.py
-│   ├── __pycache__/
-│   │   ├── __init__.cpython-38.pyc
-│   │   ├── data_augmentation.cpython-38.pyc
-│   │   ├── image_preprocessing.cpython-38.pyc
-│   │   ├── imageutils.cpython-38.pyc
 │   ├── data_augmentation.py
 │   ├── image_preprocessing.py
-│   ├── imageutils.py
+│   ├── image_utils.py
 ```
 
 ## Description of Files and Folders
