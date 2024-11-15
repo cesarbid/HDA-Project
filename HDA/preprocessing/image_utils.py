@@ -117,8 +117,3 @@ def normalize_image(image):
         image(numpy.ndarray): image as a numpy array
     """
     return image / 255.0
-
-
-if __name__ == "__main__":
-    
-    print("This file is not meant to be run directly.")

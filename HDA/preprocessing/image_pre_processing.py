@@ -1,16 +1,13 @@
 import os
 from typing import List, Dict
 import numpy as np
-from pandas import Series
 import matplotlib.pyplot as plt
 import cv2
 import tensorflow as tf
-import gc
-import random
 
 os.environ['TF_ENABLE_ONEDNN_OPTS'] = '0'
 
-from ..image_utils import crop_image, resize_image, normalize_image, CLAHE, create_patches
+from .image_utils import crop_image, resize_image, normalize_image, CLAHE, create_patches
 from .data_augmentation import data_augmentation, random_zoom, random_rotate, random_blur
 
 def pre_process(image_n : str, path : str, num_patches_per_side:int = 3, 

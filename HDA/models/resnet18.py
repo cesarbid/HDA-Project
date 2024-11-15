@@ -91,14 +91,3 @@ def ResNet18(input_shape, gender_input_shape, classes=1000, network_type='vannil
     model = Model(inputs=[X_input, gender_input], outputs = X, name='ResNet18')
 
     return model
-
-
-if __name__ == "__main__":
-    # Create the ResNet18 model
-    model = ResNet18(input_shape=(224, 224, 3), gender_input_shape=(1,), classes='regression', network_type='cbam') 
-
-    # Compile the model
-    model.compile(optimizer='adam', loss='mean_absolute_error', metrics=['mean_absolute_error'])
-
-    # Print the model summary
-    model.summary()
