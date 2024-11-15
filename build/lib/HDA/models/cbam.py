@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras.layers import Layer, Conv2D, GlobalAveragePooling2D, GlobalMaxPooling2D, Dense, Multiply, Add, Concatenate, Activation, AveragePooling2D, MaxPooling2D
+from tensorflow.keras.layers import Layer, Conv2D, GlobalAveragePooling2D, GlobalMaxPooling2D, Dense, Multiply, Add, Concatenate, Activation
 
 class GlobalAveragePooling2DCustom(Layer):
     def __init__(self, **kwargs):
@@ -71,15 +71,3 @@ def cbam_block(input_feature, ratio=8):
     cbam_feature = channel_attention(input_feature, ratio)
     cbam_feature = spatial_attention(cbam_feature)
     return cbam_feature
-
-if __name__ == "__main__":
-    # Example usage
-    input_layer = tf.keras.layers.Input(shape=(64, 64, 256))  # Example input shape
-    output = cbam_block(input_layer)
-
-    model = tf.keras.models.Model(inputs=input_layer, outputs=output)
-    model.summary()
-
-    # model.save("cbam.h5")
-    # model2 = tf.keras.models.load_model("my_resnet18cbam_model_0_0005_9centers_-04-_library_augmentation.h5", compile=False, custom_objects={'cbam_layer': cbam_block})
-    # model2.summary()

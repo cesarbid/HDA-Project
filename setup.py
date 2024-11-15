@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="Human_Data_Analytics",                     
-    version="0.7.5",
+    version="1.0.0",
     author = "Cesare Bidini, Nicolò Rinaldi",                              
     packages=find_packages(),
     # install_requires=[                            

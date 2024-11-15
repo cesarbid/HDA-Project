@@ -1,5 +1,5 @@
 import cv2
-from typing import List, Dict
+from typing import List
 import numpy as np
 import random
 
