@@ -29,6 +29,6 @@ Definition of the models and the CBAM module in tensor flow:
 ### **Preprocessing Folder (`HDA/preprocessing/`)**
 - `data_augmentation.py`: Defines the functions used for data augmentation.
 - `image_preprocessing.py`: Contains functions to extract patches and the generator for training.
-- `imageutils.py`: Includes helper functions for data preprocessing used in `image_preprocessing.py`.
+- `image_utils.py`: Includes helper functions for data preprocessing used in `image_preprocessing.py`.
 
 
