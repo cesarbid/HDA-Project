@@ -18,6 +18,17 @@ HDA/
 │   ├── image_utils.py
 ```
 
+The folder training_inference_results/ contains the notebook with the training process and results for each model in a separate notebook and inference-time results in a single notebook for both models.
+
+```plaintext
+training_inference_results/
+│   ├── Inception_v4_best_model.ipynb
+│   ├── ResNet_channel_best_model.ipynb
+│   ├── inference_time_results.ipynb
+```
+
+The demo.ipynb notebook contains a demo of model at inference-time using an example image and a brief explaination of how inference works.
+
 ## Description of Files and Folders
 
 ### **Models Folder (`HDA/models/`)**
@@ -30,5 +41,3 @@ Definition of the models and the CBAM module in tensor flow:
 - `data_augmentation.py`: Defines the functions used for data augmentation.
 - `image_preprocessing.py`: Contains functions to extract patches and the generator for training.
 - `image_utils.py`: Includes helper functions for data preprocessing used in `image_preprocessing.py`.
-
-
