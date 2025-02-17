@@ -29,7 +29,7 @@ training_inference_results/
 
 The demo.ipynb notebook contains a demo of model at inference-time using an example image and a brief explaination of how inference works.
 
-the pdf file contains the paper that describe the architecture, training and results for bott models.
+the pdf file contains the paper that describe the architecture, training and results for both models.
 
 ## Description of Files and Folders
 
